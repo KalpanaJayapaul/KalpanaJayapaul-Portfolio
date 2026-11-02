@@ -17,6 +17,8 @@ import BrushIcon from "@mui/icons-material/Brush";
 import PsychologyIcon from "@mui/icons-material/Psychology";
 import NorthIcon from '@mui/icons-material/North';
 
+const BASE_URL = import.meta.env.BASE_URL;
+
 const github = "https://github.com/KalpanaJayapaul";
 const linkedin = "https://www.linkedin.com/in/kalpana-j-1370912bb";
 const email = "j.kalpana.jks@gmail.com";
@@ -56,7 +58,7 @@ const projects = [
     stack: ["Python", "ResNet50", "TensorFlow", "Grad-CAM", "LIME"],
     icon: "◉",
     tone: "pink",
-    image: "/projects/pneumonia-detection.png",
+    image: BASE_URL + "/projects/pneumonia-detection.png",
     link: "https://github.com/KalpanaJayapaul/explainable-pneumonia-detection",
   },
   {
@@ -68,7 +70,7 @@ const projects = [
     stack: ["React", "Django", "Python", "RAG", "LLMs"],
     icon: "⌘",
     tone: "violet",
-    image: "/projects/rag-chatbot.jfif",
+    image: BASE_URL + "/projects/rag-chatbot.jfif",
     link: "https://github.com/KalpanaJayapaul/rag-pdf-chatbot",
   },
   {
@@ -80,7 +82,7 @@ const projects = [
     stack: ["Angular", "Laravel", "MySQL"],
     icon: "🎓",
     tone: "violet",
-    image: "/projects/college-erp.jfif",
+    image: BASE_URL + "/projects/college-erp.jfif",
     link: "https://github.com/KalpanaJayapaul/college-erp-system",
   },
   {
@@ -92,7 +94,7 @@ const projects = [
     stack: ["React", "Django", "Twilio", "LLMs"],
     icon: "✦",
     tone: "blue",
-    image: "/projects/ai-voice-agent.jfif",
+    image: BASE_URL + "/projects/ai-voice-agent.jfif",
     link: "https://github.com/KalpanaJayapaul/ai-chat-voice-agent",
   },
   {
@@ -113,7 +115,7 @@ const projects = [
     ],
     icon: "▦",
     tone: "cyan",
-    image: "/projects/llm-gateway.jfif",
+    image: BASE_URL + "/projects/llm-gateway.jfif",
     link: "https://github.com/KalpanaJayapaul/llm-gateway-fallback-routing",
   },
   {
@@ -125,7 +127,7 @@ const projects = [
     stack: ["React", "Python", "Django REST", "LLMs"],
     icon: "✿",
     tone: "pink",
-    image: "/projects/ai-resume-analyzer.jpg",
+    image: BASE_URL + "/projects/ai-resume-analyzer.jpg",
     link: "https://github.com/KalpanaJayapaul/ai-resume-analyzer",
   },
 ];
@@ -206,7 +208,7 @@ function App() {
                 Explore My Work <ArrowOutwardIcon fontSize="small" />
               </a>
               <a
-                href="/resume/Kalpana_Resume.pdf"
+                href={BASE_URL + "resume/Kalpana_Resume.pdf"}
                 download="Kalpana_Resume.pdf"
                 className="button ghost"
               >
@@ -243,7 +245,7 @@ function App() {
           <div className="hero-visual">
             <div className="halo" />
             <div className="portrait">
-              <img src="/JKS.png" alt="Kalpana J" />
+              <img src={BASE_URL + "JKS.png"} alt="Kalpana J" />
             </div>
             <div className="float-card card-one">
               <CodeIcon />{" "}
